@@ -1,0 +1,452 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    background-color: #002E95;
+}
+
+/* HEADER */
+#header{
+  background-color: white;
+  width: 100%;
+  height: 109px;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding: 0 20px;
+}
+.conjuntologo{
+  margin-left: 10px;
+}
+.logosite{
+  height: 127px;
+  width: 127px;
+  margin-top: -10px;
+}
+.nomesite{
+  font-family: "Germania One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #002E95;
+  margin-top: -36px;  
+  margin-left: 5px; 
+  font-size: 20px; 
+}
+.cabechalo{
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  margin-left: 190px;
+}
+a{
+  text-decoration: none;
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #002E95;
+  font-size: 20px;
+}
+.buscador{
+  height: 20px;
+  width: 20px;
+  margin-left: 250px;
+}
+
+/* PÁGINA INICIAL */
+#chamadainicial{
+  background-color: #002E95;
+  height: 110vh;
+}
+.paginainicial{
+  width: 100%;
+  height: 1000px;
+  background-image: url(imagens/BannerAbaPrincipal.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: -265px;
+  position: relative;
+}
+.raposacereal{
+  margin-top: 15%;
+  margin-left: 350px;
+  display: block;
+}
+.textopageprincipal{
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 76px;
+  margin-top: -420px;
+  margin-left: 900px;
+}
+
+/* PROMOÇÕES */
+#promocoes{
+  background-color: #ffffff;
+  height: 110vh;
+  margin-top: -45px;
+}
+.titulopromo{
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#002E95;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+.cerealpromo1,
+.cerealpromo2{
+  background-color:#002E95;
+  width: 495px;
+  height: 479px;
+  border-radius: 35px;
+}
+.promos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35%;
+  margin-top: 145px;
+}
+.imgcerealpromo1,
+.imgcerealpromo2{
+  margin-left: 15px;
+  margin-top: 10px;
+  height: 456px;
+  width: 462px;
+  border-radius: 10px;
+}
+.titulocereal1,
+.titulocereal2{
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:black;
+  font-size: 45px;
+}
+.titulospromos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45%;
+  margin-top: 60px;
+}
+
+/* RODAPÉ */
+#rodape{
+  background-color: #002E95;
+  height: 30vh;
+  display: block;
+}
+.logosite{
+  height: 127px;
+  width: 127px;
+  margin-top: -10px;
+}
+.nomesite1{
+  font-family: "Germania One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: -36px;  
+  margin-left: 5px; 
+  font-size: 20px; 
+}
+.conjuntologo1{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.infosrodape{
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 30px;
+}
+.posinfosrodape{
+  margin-left: 1300px;
+  margin-top: -50px;
+  gap: 50px;
+}
+
+/*media1*/
+@media (min-width: 550px) and (max-width: 1100px) {
+
+
+  #header{
+    height: auto;
+    padding: 10px 16px;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cabechalo{
+    margin-left: 0;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .buscador{
+    margin-left: 0;
+  }
+
+  #chamadainicial{
+    height: auto;
+  }
+  .paginainicial{
+    height: 60vh;
+    min-height: 420px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .raposacereal{
+    margin: 0 auto;
+    max-width: 60%;
+    height: auto;
+  }
+  .textopageprincipal{
+    margin: 16px auto 0;
+    font-size: 44px;
+    text-align: center;
+  }
+
+  #promocoes{
+    height: auto;
+    margin-top: 0;
+    padding: 40px 16px;
+  }
+  .titulopromo{
+    font-size: 44px;
+    text-align: center;
+  }
+  .promos{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    justify-items: center;
+    margin-top: 40px;
+  }
+  .cerealpromo1,
+  .cerealpromo2{
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    padding: 8px;
+  }
+  .imgcerealpromo1,
+  .imgcerealpromo2{
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  .titulospromos{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+    justify-items: center;
+  }
+  .titulocereal1,
+  .titulocereal2{
+    font-size: 28px;
+    text-align: center;
+  }
+
+
+  #rodape{
+    height: auto;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .conjuntologo1{
+    margin: 0;
+    text-align: center;
+  }
+  .posinfosrodape{
+    margin: 0;
+    text-align: center;
+  }
+  .infosrodape{
+    font-size: 22px;
+    text-align: center;
+  }
+}
+/*media2*/
+@media (max-width: 550px) {
+
+
+  #header{
+    height: auto;
+    padding: 8px 12px;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .logosite{
+    height: 72px;
+    width: 72px;
+    margin-top: 0;
+  }
+  .nomesite{
+    margin: 0;
+    font-size: 16px;
+  }
+  .cabechalo{
+    margin-left: 0;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  a{
+    font-size: 16px;
+  }
+  .buscador{
+    margin-left: 0;
+    height: 18px;
+    width: 18px;
+  }
+
+
+  #chamadainicial{
+    height: auto;
+  }
+  .paginainicial{
+    height: 50vh;
+    min-height: 360px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .raposacereal{
+    margin: 0 auto;
+    max-width: 75%;
+    height: auto;
+  }
+  .textopageprincipal{
+    font-size: 28px;
+    margin: 12px 0 0;
+    text-align: center;
+  }
+
+
+  #promocoes{
+    height: auto;
+    margin-top: 0;
+    padding: 32px 12px;
+  }
+  .titulopromo{
+    font-size: 32px;
+    text-align: center;
+  }
+  .promos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .cerealpromo1,
+  .cerealpromo2{
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    padding: 8px;
+  }
+  .imgcerealpromo1,
+  .imgcerealpromo2{
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .titulospromos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .titulocereal1,
+  .titulocereal2{
+    font-size: 22px;
+    text-align: center;
+  }
+
+
+  #rodape{
+    height: auto;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .conjuntologo1{
+    margin: 0;
+  }
+  .infosrodape{
+    font-size: 18px;
+    text-align: center;
+  }
+  .posinfosrodape{
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/*media3*/
+@media (max-width: 1024px) {
+  section#quem-somos, 
+  section#produtos, 
+  section#contato {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section {
+    padding: 40px 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .logo img {
+    max-width: 120px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 30px 20px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
